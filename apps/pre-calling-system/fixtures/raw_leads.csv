@@ -1,0 +1,13 @@
+source_id,source_row_number,company_name,domain,contact_name,contact_role,phone,number_type,jurisdiction,time_zone,industry,source_permission,consent_status,source_date,data_confidence
+list_a,1,Acme Dental LLC,https://www.acmedental.com,Jane Smith,Owner,+1 (415) 555-0101,business_landline,CA,America/Los_Angeles,dental,approved,verified,2026-09-20,high
+list_a,2,Acme Dental,acmedental.com,Jane Smith,Owner,4155550101,business_landline,CA,America/Los_Angeles,dental,approved,verified,2026-09-20,high
+list_a,3,Blue Sky HVAC,blueskyhvac.com,Mark Lee,Manager,+1 212 555 0102,business_voip,NY,America/New_York,hvac,approved,verified,2026-09-25,high
+list_a,4,Sunrise Legal, sunriselegal.com,Alex Brown,Partner,+1 312 555 0103,unknown,IL,America/Chicago,legal,approved,verified,2026-09-25,medium
+list_a,5,Northstar Fitness,northstarfitness.com,Chris Young,Owner,+1 305 555 0104,business_landline,FL,America/New_York,fitness,approved,missing,2026-09-25,high
+list_a,6,Old Town Salon,oldtownsalon.com,,Owner,+1 206 555 0105,business_landline,WA,America/Los_Angeles,salon,approved,verified,2024-01-10,low
+list_a,7,No Permission Co,nopermission.example.com,Pat Green,Owner,+1 617 555 0106,business_landline,MA,America/New_York,other,unknown,unknown,2026-09-25,high
+list_a,8,Suppressed Dental,suppresseddental.com,Sam Stone,Owner,+1 415 555 0199,business_landline,CA,America/Los_Angeles,dental,approved,verified,2026-09-28,high
+list_a,9,Bad Phone,badphone.com,Taylor Fox,Owner,not-a-phone,business_landline,CA,America/Los_Angeles,other,approved,verified,2026-09-28,high
+list_a,10,Decision Unknown,decisionunknown.com,Riley King,,+1 214 555 0110,business_landline,,America/Chicago,other,approved,verified,2026-09-28,medium
+list_b,1,Acme Dental LLC,acmedental.com,Jane Smith,Owner,+1 415 555 0101,business_landline,CA,America/Los_Angeles,dental,approved,verified,2026-09-20,high
+list_b,2,Conflicting Acme,acmedental.com,Jordan Smith,Office Manager,+1 415 555 0101,business_landline,CA,America/Los_Angeles,dental,approved,verified,2026-09-30,medium

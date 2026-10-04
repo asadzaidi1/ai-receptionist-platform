@@ -1,0 +1,26 @@
+campaign_id: pilot_REPLACE
+status: DRAFT
+legal_seller_entity: REQUIRED
+public_brand: REQUIRED
+niche: REQUIRED
+target_jurisdictions: []
+lead_source_id: REQUIRED
+source_permission: REQUIRED
+consent_policy_version: REQUIRED
+suppression_policy_version: REQUIRED
+brain_version: REQUIRED
+offer_version: REQUIRED
+script_version: REQUIRED
+policy_version: REQUIRED
+crm: REQUIRED
+consent_service: REQUIRED
+calling_provider: REQUIRED
+caller_id: REQUIRED
+callback_ready: false
+recording_policy_version: REQUIRED
+daily_cap: REQUIRED
+window_start: '09:00'
+window_end: '17:00'
+human_monitoring: REQUIRED
+counsel_review_ref: REQUIRED
+# Never put credentials or real lead data in this file.

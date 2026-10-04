@@ -1,0 +1,27 @@
+{
+  "raw_lead": {
+    "required": ["source_id", "source_row_number", "company_name", "phone", "source_permission", "consent_status", "source_date", "data_confidence"],
+    "properties": {
+      "source_id": "string",
+      "source_row_number": "integer",
+      "company_name": "string",
+      "domain": "string",
+      "contact_name": "string",
+      "contact_role": "string",
+      "phone": "string",
+      "number_type": "business_landline|business_voip|wireless|residential|unknown",
+      "jurisdiction": "string",
+      "time_zone": "IANA timezone string",
+      "industry": "string",
+      "source_permission": "approved|unknown|prohibited",
+      "consent_status": "verified|missing|revoked|unknown",
+      "source_date": "YYYY-MM-DD",
+      "data_confidence": "high|medium|low"
+    }
+  },
+  "queue_decision": {
+    "required": ["lead_id", "queue", "decision_reason", "policy_version", "decided_at_utc"],
+    "queue": "CAMPAIGN_READY|HUMAN_REVIEW_REQUIRED|DO_NOT_CONTACT",
+    "must_include": ["source_id", "source_row_number", "dedupe_key", "suppression_match_or_null"]
+  }
+}

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Runtime data and secrets
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+run/
+logs/
+recordings/
+transcripts/
+consent-evidence/
+raw-data/
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Generated artifacts
+build/
+dist/
+*.zip

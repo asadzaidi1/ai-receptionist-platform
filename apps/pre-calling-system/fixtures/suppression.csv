@@ -1,0 +1,5 @@
+suppression_id,scope,match_value,reason,source,active,created_at_utc
+sup_001,phone,+14155550199,requested_no_contact,crm,1,2026-09-29T10:00:00Z
+sup_002,domain,blockedvendor.com,do_not_contact_domain,compliance,1,2026-09-29T10:00:00Z
+sup_003,company,do_not_call_company,requested_no_contact,crm,1,2026-09-29T10:00:00Z
+sup_004,phone,+14155550106,old_request,crm,0,2025-01-01T10:00:00Z
