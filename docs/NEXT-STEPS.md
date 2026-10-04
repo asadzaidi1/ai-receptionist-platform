@@ -1,18 +1,9 @@
 
 
-## New target capability: experience-aware agent management
+## Vapi playbook operating model
 
-The target now includes a governed Afiniti-style pairing layer and CallAgentAI-style inbound/outbound operations:
+Apply a use-case-first rollout. Start with narrow, high-volume, low-ambiguity workflows such as intake, qualification, scheduling, reminders, and verified status checks. Keep humans in the loop for high-emotion complaints, legal/safety uncertainty, undocumented exceptions, and discretion-heavy disputes.
 
-- constraint-first customer/agent matching;
-- explicit language, voice, channel, timing, continuity, and accessibility preferences;
-- specialized bounded agents;
-- inbound intake, scheduling, transfer, and work-order flows;
-- outbound callbacks and campaigns;
-- voicemail/answering-machine processing;
-- CRM, calendar, SMS/email, Slack/webhook integrations;
-- explainable reason codes and human override;
-- control-group measurement; and
-- continuous human-approved calibration.
+The next orchestration build must preserve one shared call context across bounded specialist agents, maintain explicit tool permissions, prevent transfer loops, and recover safely when a component fails. Every failed action must produce an approved next step, a human handoff or bounded callback, and an audit record.
 
-The next engineering phase should implement preference profiles, matching reason codes, agent-capability registry, handoff acceptance, and inbound/outbound workflow orchestration. Matching must never bypass compliance or dispatch authorization.
+Use the internal rollout tiers in `docs/VAPI-PLAYBOOK-BENCHMARK.md`: Foundation, Growth, Pro, and Enterprise. Advance only after evidence, monitoring, cost controls, canary testing, and rollback readiness are documented.
