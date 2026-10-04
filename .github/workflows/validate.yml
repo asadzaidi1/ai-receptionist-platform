@@ -1,0 +1,39 @@
+name: Validate AI Receptionist Platform
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install test dependencies
+        run: python -m pip install -r apps/pre-calling-system/requirements-dev.txt
+
+      - name: Run Phase 1–4 tests
+        run: python -m pytest -q
+        working-directory: apps/pre-calling-system
+
+      - name: Validate Obsidian vault
+        run: python skills/ai-receptionist-production-vault/scripts/validate_vault.py brain/obsidian-vault
+
+      - name: Check repository hygiene
+        run: |
+          git diff --check
+          if find . -type f \( -name '*.db' -o -name '*.sqlite' -o -name '*.sqlite3' -o -name '.env' \) -not -path './.git/*' | grep -q .; then
+            echo 'Runtime database or environment file found in repository.'
+            exit 1
+          fi

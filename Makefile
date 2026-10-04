@@ -4,7 +4,7 @@ test:
 	cd apps/pre-calling-system && python3 -m pytest -q
 
 vault-check:
-	python3 /home/ubuntu/skills/ai-receptionist-production-vault/scripts/validate_vault.py brain/obsidian-vault
+	python3 skills/ai-receptionist-production-vault/scripts/validate_vault.py brain/obsidian-vault
 
 validate: test vault-check
 	git diff --check
